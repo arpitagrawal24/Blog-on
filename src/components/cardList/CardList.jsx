@@ -7,7 +7,7 @@ import Card from "../card/Card";
 const getData = async (page, cat) => {
   try {
     const res = await fetch(
-      `/api/posts?page=${page}&cat=${cat || ""}`,
+      `https://blog-on.vercel.app/api/posts?page=${page}&cat=${cat || ""}`,
       { cache: "reload" }
     );
 
